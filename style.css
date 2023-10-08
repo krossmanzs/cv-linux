@@ -1,67 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Pixelify Sans', cursive;
+    scroll-behavior: smooth;
+    color: #AB47BC;
 }
 
-h1 {
-    color: white;
+.container {
+    align-self: flex-end;
+    position: relative;
+    left: 10vw;
+    padding: 0 5%;
+}
+
+body {
+    display: flex;
+    background-color: #E1BEE7;
+}
+
+.welcome-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+}
+
+.welcome-container > h1 {
+    height: 50%;
+    font-family: 'Pixelify Sans', cursive;
+    font-weight: bold;
     text-align: center;
-    font-size: 50px;
-    margin: 20% 0;
+    font-size: 128px;
     cursor: default;
     transition: 0.5s;
 }
 
-h1:hover {
-    transition: 0.5s;
-    color: cornflowerblue;
+.welcome-container > h2 {
+    height: 20vh;
+    font-weight: 200;
 }
 
-h2 {
-    color: chocolate;
-    font-size: 30px;
+.navbar {
+    height: 100vh;
+    width: 10vw;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    background-color: #CE93D8;
+}
+
+.navbar > ul {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+.navbar > ul > li{
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    transition: 0.2s ease-out;
+}
+
+.navbar > ul > li:hover {
+    font-size: larger;
+    transition: 0.2s ease-out;
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    color: #F3E5F5;
+}
+
+h1:hover {
+    transition: 0.2s ease-in;
+    color: #CE93D8;
 }
 
 .darkred {
     color: darkred;
 }
 
-body {
-    background-color: burlywood;
+.category-wrapper {
+    padding-top: 3vh;
+    height: 100vh;
+    width: 70vw;
+}
+
+.category-wrapper > div {
+    display: flex;
+    gap: 3vw;
+}
+
+.sub {
+    color: #8E24AA;
+    text-decoration: underline;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.category-wrapper ul {
+    font-size: 2rem;
+    list-style-type: square;
 }
 
 .gambar {
-    width: 100%;
+    height: 350px;
     object-fit: scale-down;
+    box-shadow: 10px 10px;
+    background-color: aquamarine;
+    transition: 0.3s ease-in-out;
+}
+
+.gambar:hover {
+    height: 400px;
+    transition: 0.3s ease-in-out;
 }
 
 .biodata {
     font-size: 35px;
     text-align: justify;
-    padding: 20px 10% 80px 10%;
+    word-wrap: break-word;
 }
 
 .biodata::first-letter {
     font-size: 80px;
-}
-
-.container {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-}
-
-.pengalaman {
-    color: crimson;
-}
-
-.hobi {
-    color: cornflowerblue;
-}
-
-.kontak {
-    color: hotpink;
 }
